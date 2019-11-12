@@ -9,10 +9,16 @@
 }
 
 $color-primary: #F56C5A;
+$color-texto: #646363;
+
+a {
+    color: $color-texto;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    color: $color-texto;
 }
 
 p {
@@ -41,112 +47,230 @@ header {
 }
 
 
-#main {
-    margin: 4em auto;
+#home {
+    #main {
+        margin: 4em auto;
 
-    .container {
-        display: grid;
-        grid-template-columns: 40% auto;
-        height: 80vh;
-        grid-gap: 5em;
+        .container {
+            display: grid;
+            grid-template-columns: 40% auto;
+            height: 80vh;
+            grid-gap: 5em;
 
-        .image {
-            background: url('../img/images/profile-trip.jpg')center;
-            background-size: cover;
-        }
-
-        .description {
-            max-width: 500px;
-            align-self: center;
-
-            h1 {
-                font-size: 2.5em;
-                color: $color-primary;
+            .image {
+                background: url('../img/images/profile-trip.jpg')center;
+                background-size: cover;
             }
 
-            .prof {
-                display: inline-block;
-                margin: 1em 0;
-                font-size: 1.2em;
-            }
+            .description {
+                max-width: 500px;
+                align-self: center;
 
-            hr {
-                width: 10%;
-                margin-bottom: 1.5em;
-            }
-
-            .phrase {
-                font-size: 1.5em;
-                font-style: italic;
-            }
-
-            .about {
-                margin-top: 3em;
-
-                p {
-                    margin-top: 1em;
+                h1 {
+                    font-size: 2.5em;
+                    color: $color-primary;
+                    font-weight: 700;
                 }
 
-                .boton {
-                    margin-top: 1em;
+                .prof {
                     display: inline-block;
-                    padding: 1em;
-                    background: $color-primary;
-                    color: #fff;
-                    transition: 350ms transform ease-in-out;
+                    margin: 1em 0;
+                    font-size: 1.2em;
+                }
 
-                    &:hover {
-                        transform: translatex(.5em);
+                hr {
+                    width: 10%;
+                    margin-bottom: 1.5em;
+                }
+
+                .phrase {
+                    font-size: 1.5em;
+                    font-style: italic;
+                }
+
+                .about {
+                    margin-top: 3em;
+
+                    h2 {
+                        font-weight: 700;
+                    }
+
+                    p {
+                        margin-top: 1em;
+                    }
+
+                    .boton {
+                        margin-top: 1em;
+                        display: inline-block;
+                        padding: 1em;
+                        background: $color-primary;
+                        color: #fff;
+                        transition: 350ms transform ease-in-out;
+
+                        &:hover {
+                            transform: translatex(.5em);
+                        }
                     }
                 }
             }
         }
     }
-}
 
-#gallery {
-    margin: 4em auto;
+    #gallery {
+        margin: 4em auto;
 
-    h3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5em;
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: 700;
 
-        img {
-            display: block;
-            margin: .5em;
+            img {
+                display: block;
+                margin: .5em;
+            }
+
+            span {
+                margin-top: 0.5em;
+            }
+        }
+
+        .grid-gallery {
+            margin-top: 1.5em;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 80vh;
+            grid-gap: 3em;
+
+            div {
+                background-size: cover;
+            }
+
+            .image-one {
+                background: url('../img/images/gallery-one.jpg')center;
+                grid-column: span 2;
+            }
+
+            .image-two {
+                background: url('../img/images/gallery-two.jpg')center;
+                grid-row: span 2;
+            }
+
+            .image-three {
+                background: url('../img/images/gallery-three.jpg')center;
+            }
+
+            .image-four {
+                background: url('../img/images/gallery-four.jpg')center;
+            }
+
         }
     }
+}
 
-    .grid-gallery {
-        margin-top: 1.5em;
+#friends {
+    .friend {
+        margin-top: 3em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        height: 80vh;
-        grid-gap: 3em;
+        grid-template-rows: 60vh;
+        grid-gap: 6em;
+        padding-bottom: 3em;
+        border-bottom: 1px solid rgba($color-texto, .6);
 
-        div {
+        .number {
+            transform: rotate(-90deg);
+            justify-self: center;
+            align-self: center;
+            font-size: 9em;
+            opacity: .2;
+            letter-spacing: 10px;
+        }
+
+        .description {
+            justify-self: center;
+            align-self: center;
+
+            .name {
+                font-size: 2em;
+                font-weight: 700;
+            }
+
+            .proffesion {
+                background: $color-primary;
+                padding: 1em;
+                margin: 1em 0;
+                color: #fff;
+                display: inline-block;
+                letter-spacing: 2px;
+            }
+
+            .boton {
+                display: inline-block;
+                margin: 1em 0;
+                color: #000;
+                font-weight: 700;
+                padding: 0.5em 0;
+                position: relative;
+
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    background-color: $color-primary;
+                    transform-origin: bottom right;
+                    transform: scaleX(0);
+                    transition: transform 400ms ease;
+                }
+
+                &:hover::before {
+                    transform-origin: bottom left;
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        .image {
+            background: url('../img/images/friend-one.jpg')center;
             background-size: cover;
         }
 
-        .image-one {
-            background: url('../img/images/gallery-one.jpg')center;
-            grid-column: span 2;
-        }
-
         .image-two {
-            background: url('../img/images/gallery-two.jpg')center;
-            grid-row: span 2;
+            background: url('../img/images/friend-two.jpg')center;
+            background-size: cover;
         }
 
         .image-three {
-            background: url('../img/images/gallery-three.jpg')center;
+            background: url('../img/images/friend-three.jpg')center;
+            background-size: cover;
         }
 
         .image-four {
-            background: url('../img/images/gallery-four.jpg')center;
+            background: url('../img/images/friend-four.jpg')center;
+            background-size: cover;
         }
 
+        .image-five {
+            background: url('../img/images/friend-five.jpg')center;
+            background-size: cover;
+        }
+
+        .image-six {
+            background: url('../img/images/friend-six.jpg')center;
+            background-size: cover;
+        }
+    }
+}
+
+
+#inspiration {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
     }
 }
