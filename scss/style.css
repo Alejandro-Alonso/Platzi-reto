@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.wrap {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu {
+  margin-top: 1em;
+  width: 100%;
+  background: #FCFCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1.5em;
+}
+
+#main {
+  margin: 4em auto;
+}
+
+#main .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% auto;
+      grid-template-columns: 40% auto;
+  height: 80vh;
+  grid-gap: 5em;
+}
+
+#main .container .image {
+  background: url("../img/images/profile-trip.jpg") center;
+  background-size: cover;
+}
+
+#main .container .description {
+  max-width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main .container .description h1 {
+  font-size: 2.5em;
+  color: #F56C5A;
+}
+
+#main .container .description .prof {
+  display: inline-block;
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+
+#main .container .description hr {
+  width: 10%;
+  margin-bottom: 1.5em;
+}
+
+#main .container .description .phrase {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#main .container .description .about {
+  margin-top: 3em;
+}
+
+#main .container .description .about p {
+  margin-top: 1em;
+}
+
+#main .container .description .about .boton {
+  margin-top: 1em;
+  display: inline-block;
+  padding: 1em;
+  background: #F56C5A;
+  color: #fff;
+  -webkit-transition: 350ms -webkit-transform ease-in-out;
+  transition: 350ms -webkit-transform ease-in-out;
+  transition: 350ms transform ease-in-out;
+  transition: 350ms transform ease-in-out, 350ms -webkit-transform ease-in-out;
+}
+
+#main .container .description .about .boton:hover {
+  -webkit-transform: translatex(0.5em);
+          transform: translatex(0.5em);
+}
+
+#gallery {
+  margin: 4em auto;
+}
+
+#gallery h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+}
+
+#gallery h3 img {
+  display: block;
+  margin: .5em;
+}
+
+#gallery .grid-gallery {
+  margin-top: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  height: 80vh;
+  grid-gap: 3em;
+}
+
+#gallery .grid-gallery div {
+  background-size: cover;
+}
+
+#gallery .grid-gallery .image-one {
+  background: url("../img/images/gallery-one.jpg") center;
+  grid-column: span 2;
+}
+
+#gallery .grid-gallery .image-two {
+  background: url("../img/images/gallery-two.jpg") center;
+  grid-row: span 2;
+}
+
+#gallery .grid-gallery .image-three {
+  background: url("../img/images/gallery-three.jpg") center;
+}
+
+#gallery .grid-gallery .image-four {
+  background: url("../img/images/gallery-four.jpg") center;
+}
