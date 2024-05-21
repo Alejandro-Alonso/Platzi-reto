@@ -19,8 +19,9 @@
       </div>
       <nav>
          <a href="">Home</a>
-         <a href="">Home</a>
-         <a href="">Home</a>
+         <a href="">Qué es Prompter</a>
+         <a href="">Cómo funciona</a>
+         <a class="button" href="#herramienta">Construir prompt</a>
       </nav>
    </header>
    <main>
@@ -33,35 +34,34 @@
          <img class="img" src="./img/mid-icon.png">
       </div>
       <p class="sub-title">El poder de la creación está en tus dedos.</p>
-      <a class="button" href="#">Construir prompt</a>
+      <a class="button" href="#herramienta">Construir prompt</a>
       <img class="main-banner" src="./img/main-banner.png" alt="">
    </main>
    <div class="empty"></div>
-   <section class="tool">
+   <section class="tool" id="herramienta">
       <div class="swiper-container">
          <div class="text-tool">
             <p>No limites tu potencial.</p>
             <h2 class="title">Empieza a construir <br> tu prompt</h2>
             <p class="sub-title">El poder de la creación está en tus dedos.</p>
-            <a class="button" href="#">Construir prompt</a>
          </div>
          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                <div class="swiper-slide">
-                  <h3>1. Define el objetivo: </h3>
-                  <p>¿Qué tipo de imagen quieres generar? ¿Es un retrato, un paisaje, una fotografía de producto, una ilustración o algo más?</p>
-                  <input type="text" id="pelicula" name="pelicula">
+                  <h3>Describe la situación:</h3>
+                  <p>¿Qué está sucediendo en la imagen? ¿Hay alguna acción o evento específico que se está desarrollando?</p>
+                  <input type="text" id="pelicula" name="pelicula" placeholder="Isaac Newton está acostado en un arbol.">
+                  <a class="button" href="#">Construir prompt</a>
                </div>
-               <div class="swiper-slide">
+               <!-- <div class="swiper-slide">
                   <h3>Describe la situación: </h3>
                   <p>¿Qué está sucediendo en la imagen? ¿Hay alguna acción o evento específico que se está desarrollando?</p>
-
                   <input type="text" id="actor" name="actor">
+                  <a class="button" href="#">Construir prompt</a>
                </div>
                <div class="swiper-slide">
                   <h3>Describe los personajes:</h3>
                   <p>¿Dónde se desarrolla la imagen? ¿Es un lugar interior o exterior? ¿Hay algún elemento específico del entorno que sea importante?</p>
-
                   <input type="text" id="actor2" name="actor2">
                </div>
                <div class="swiper-slide">
@@ -76,7 +76,7 @@
                   <p id="respuesta-actor"></p>
                   <p id="respuesta-actor2"></p>
                   <p id="respuesta-actor3"></p>
-               </div>
+               </div> -->
             </div>
             <div class="swiper-pagination"></div>
          </div>

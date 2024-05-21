@@ -4,8 +4,16 @@
    box-sizing: border-box;
 }
 
-body {
+html {
+   scroll-behavior: smooth;
+}
+
+body,
+input {
    font-family: "Poppins", sans-serif;
+}
+
+body {
    overflow-x: hidden;
 }
 
@@ -56,13 +64,17 @@ main {
    margin-top: 1rem;
 }
 
+nav {
+   display: flex;
+   align-items: center;
+}
+
 .container-title .img {
    position: absolute;
    width: 12rem;
 }
 
 .button {
-   margin-top: 2rem;
    display: inline-block;
    background: rgb(43, 253, 116);
    background: linear-gradient(0deg, rgba(43, 253, 116, 1) 15%, rgba(197, 249, 215, 1) 100%);
@@ -71,6 +83,10 @@ main {
    border-radius: 2rem;
    color: #000000;
    font-weight: 500;
+}
+
+main .button {
+   margin-top: 2rem;
 }
 
 .container-title .img:nth-child(2) {
@@ -111,10 +127,6 @@ main {
    position: static;
 }
 
-.swiper-wrapper {
-   overflow: hidden;
-}
-
 .tool {
    background: rgb(255, 255, 255);
    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(250, 255, 252, 1) 32%, rgba(220, 252, 231, 1) 93%, rgba(197, 249, 215, 1) 100%);
@@ -129,4 +141,35 @@ main {
 .text-tool {
    text-align: center;
    padding-top: 5rem;
+}
+
+.mySwiper {
+   max-width: 600px;
+   text-align: center;
+   margin-top: 3rem;
+}
+
+.swiper-wrapper {
+   overflow: unset;
+}
+
+.swiper-slide p {
+   margin-top: 1rem;
+}
+
+.swiper-slide input {
+   width: 100%;
+   padding: 1rem;
+   border-radius: 1rem;
+   border: 1px solid #94FFB9;
+   box-shadow: -6px 4px 1rem 1px rgb(111 200 252 / 31%);
+   margin-top: 2rem;
+   display: flex;
+   padding-bottom: 7rem;
+}
+
+.swiper-slide .button {
+   margin-top: -1rem;
+   position: relative;
+   top: -1rem;
 }
