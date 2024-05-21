@@ -2,53 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="scss/style.css">
-    <title>My Trip | Social Media</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="./">
-                <img src="img/svg/trip-logo.svg" alt="">
-            </a>
-        </div>
-        <nav class="menu">
-            <a href="./inspiration.html">Inspiracion</a>
-            <a href="./friends.html">Amigos</a>
-            <a href="./index.html">Mi perfil</a>
-        </nav>
-    </header>
-    <div id="home" class="container wrap">
-        <main id="main">
-            <div class="container">
-                <div class="image"></div>
-                <div class="description">
-                    <h1>Sofia Gomez</h1>
-                    <span class="prof">Fotografa</span>
-                    <hr>
-                    <span class="phrase">"Disfruta tu vida, porque solamente tienes una"</span>
-                    <div class="about">
-                        <h2>Acerca de mi:</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nostrum ad eum eos quam quisquam fugit dolores accusantium minus harum iusto consequatur enim esse non, maxime autem. Vitae deleniti nostrum ducimus in laborum aut blanditiis obcaecati sit dignissimos minus itaque quod quos saepe iusto, eaque voluptatem modi dolore, praesentium totam.</p>
-                        <a class="boton" href="">Sigueme</a>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <section id="gallery">
-            <h3><img src="img/svg/trip-camara.svg" alt=""> <span>Mi Galeria</span> </h3>
-            <div class="grid-gallery">
-                <div class="image-one"></div>
-                <div class="image-two"></div>
-                <div class="image-three"></div>
-                <div class="image-four"></div>
-            </div>
-        </section>
-    </div>
+   <header class="wrap">
+      <div class="logo">
+         <img src="./img/logo.svg" alt="">
+      </div>
+      <nav>
+         <a href="">Home</a>
+         <a href="">Home</a>
+         <a href="">Home</a>
+      </nav>
+   </header>
+   <main>
+      <p>No limites tu potencial.</p>
+      <div class="container-title">
+         <h2 class="title">Estas a un prompt, de <br> construir algo increible</h2>
+         <img class="img" src="./img/adobe-icon.png">
+         <img class="img" src="./img/leo-icon.png">
+         <img class="img" src="./img/copilot-icon.png">
+         <img class="img" src="./img/mid-icon.png">
+      </div>
+      <p class="sub-title">El poder de la creación está en tus dedos.</p>
+      <a class="button" href="#">Construir prompt</a>
+      <img class="main-banner" src="./img/main-banner.png" alt="">
+   </main>
+   <div class="empty"></div>
+   <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">Slide 1</div>
+         <div class="swiper-slide">Slide 2</div>
+         <div class="swiper-slide">Slide 3</div>
+         <div class="swiper-slide">Slide 4</div>
+         <div class="swiper-slide">Slide 5</div>
+         <div class="swiper-slide">Slide 6</div>
+         <div class="swiper-slide">Slide 7</div>
+         <div class="swiper-slide">Slide 8</div>
+         <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+   </div>
+   <!-- <section class="tool">
+      <div class="swiper-container">
+         <div class="text-tool">
+            <p>No limites tu potencial.</p>
+            <h2 class="title">Empieza a construir <br> tu prompt</h2>
+            <p class="sub-title">El poder de la creación está en tus dedos.</p>
+            <a class="button" href="#">Construir prompt</a>
+         </div>
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <h3>1. Define el objetivo: </h3>
+                  <p>¿Qué tipo de imagen quieres generar? ¿Es un retrato, un paisaje, una fotografía de producto, una ilustración o algo más?</p>
+                  <input type="text" id="pelicula" name="pelicula">
+               </div>
+               <div class="swiper-slide">
+                  <h3>Describe la situación: </h3>
+                  <p>¿Qué está sucediendo en la imagen? ¿Hay alguna acción o evento específico que se está desarrollando?</p>
+
+                  <input type="text" id="actor" name="actor">
+               </div>
+               <div class="swiper-slide">
+                  <h3>Describe los personajes:</h3>
+                  <p>¿Dónde se desarrolla la imagen? ¿Es un lugar interior o exterior? ¿Hay algún elemento específico del entorno que sea importante?</p>
+
+                  <input type="text" id="actor2" name="actor2">
+               </div>
+               <div class="swiper-slide">
+                  <h3>Describe el escenario</h3>
+                  <p>¿Hay personas o animales en la imagen? ¿Cómo se ven? ¿Qué están haciendo?</p>
+
+                  <input type="text" id="actor3" name="actor3">
+               </div>
+   <div class="swiper-slide" id="respuesta-slide">
+      <h3>Este sería el resultado </h3>
+      <p id="respuesta-pelicula"></p>
+      <p id="respuesta-actor"></p>
+      <p id="respuesta-actor2"></p>
+      <p id="respuesta-actor3"></p>
+   </div>
+   </div>
+   <div class="swiper-pagination"></div>
+   </div>
+   </div>
+   </section> -->
+   
+   <div class="empty"></div>
+   <!-- JS de Swiper -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="./js/index.js"></script>
 </body>
 
 </html>

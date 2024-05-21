@@ -1,0 +1,132 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   overflow-x: hidden;
+}
+
+img {
+   width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+.wrap {
+   padding: 0 2%;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 2rem;
+   max-width: 1400px;
+   margin-inline: auto;
+}
+
+nav {
+   display: flex;
+   gap: 1rem;
+}
+
+main {
+   margin-top: 10rem;
+   text-align: center;
+}
+
+.container-title {
+   position: relative;
+   max-width: 600px;
+   margin-inline: auto;
+}
+
+.title {
+   font-size: 3rem;
+   line-height: 1.2;
+   font-weight: 600;
+}
+
+.sub-title {
+   margin-top: 1rem;
+}
+
+.container-title .img {
+   position: absolute;
+   width: 12rem;
+}
+
+.button {
+   margin-top: 2rem;
+   display: inline-block;
+   background: rgb(43, 253, 116);
+   background: linear-gradient(0deg, rgba(43, 253, 116, 1) 15%, rgba(197, 249, 215, 1) 100%);
+   padding: .6rem;
+   padding: .5rem 1.5rem;
+   border-radius: 2rem;
+   color: #000000;
+   font-weight: 500;
+}
+
+.container-title .img:nth-child(2) {
+   left: -11rem;
+   top: -7rem;
+}
+
+.container-title .img:nth-child(3) {
+   left: -12rem;
+   width: 11rem;
+   bottom: -9rem;
+}
+
+.container-title .img:nth-child(4) {
+   top: -5rem;
+   right: -11rem;
+   width: 11rem;
+}
+
+.container-title .img:nth-child(5) {
+   right: -15rem;
+   bottom: -8rem;
+}
+
+.main-banner {
+   margin: -8rem auto 0;
+   max-width: 1400px;
+   position: relative;
+   z-index: -1;
+   display: block;
+}
+
+.empty {
+   height: 700px;
+}
+
+.swiper-pagination {
+   position: static;
+}
+
+.swiper-wrapper {
+   overflow: hidden;
+}
+
+.tool {
+   background: rgb(255, 255, 255);
+   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(250, 255, 252, 1) 32%, rgba(220, 252, 231, 1) 93%, rgba(197, 249, 215, 1) 100%);
+   min-height: 100vh;
+}
+
+.wrap-in {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.text-tool {
+   text-align: center;
+   padding-top: 5rem;
+}
