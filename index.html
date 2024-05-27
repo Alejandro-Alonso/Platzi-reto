@@ -37,26 +37,92 @@
       <a class="button" href="#herramienta">Construir prompt</a>
       <img class="main-banner" src="./img/main-banner.png" alt="">
    </main>
-   <div class="empty"></div>
+   <section class="how-works">
+      <div class="wrap">
+         <article>
+            <div class="text">
+               <p class="label label-yellow">Ahorra tiempo y esfuerzo</p>
+               <h2 class="title-min">Que puedes hacer <br> <strong>con prompter</strong></h2>
+               <p>Prompter es una herramienta creada para con el objetivo de ayudar a los usuarios a escribir prompts de manera fácil e intuitiva ahorrando tiempo y esfuerzo.</p>
+            </div>
+            <div class="row-img">
+               <div class="img img-1">
+                  <img src="./img/img-1.png" alt="">
+                  <img class="img-bubble" src="./img/img-1-bubbles.png" alt="">
+               </div>
+               <div class="img img-2">
+                  <img src="./img/img-2.png" alt="">
+                  <img class="img-bubble" src="./img/img-2-bubbles.png" alt="">
+               </div>
+            </div>
+         </article>
+         <article class="row-2-container">
+            <div class="row-2">
+               <div class="text">
+                  <p class="label label-blue">¿Te sientes inseguro al redactar prompts?</p>
+                  <h2 class="title-min">Beneficios de usar<br> <strong>prompter</strong></h2>
+                  <p>Escribe prompts de manera fácil e intuitiva. Optimiza tu proceso creativo, permitiéndote enfocarte en lo que realmente importa.</p>
+                  <a class="button mt-10" href="#herramienta">Construir prompt</a>
+               </div>
+               <div class="img img-3">
+                  <img src="./img/img-3.png" alt="">
+                  <img class="img-bubble" src="./img/img-3-bubble.png" alt="">
+               </div>
+            </div>
+            <ul class="list">
+               <li>
+                  <img class="icon-list" src="./img/icon-rapido.png" alt="">
+                  <p class="title-list">Rápido de usar</p>
+                  <p class="p-list">Optimiza tu proceso creativo y enfócate en lo que realmente importa.</p>
+               </li>
+               <li>
+                  <img class="icon-list" src="./img/icon-multi.png" alt="">
+                  <p class="title-list">Multidispositivo</p>
+                  <p class="p-list">Accede desde la comodidad de tu celular, tablet o computador.</p>
+               </li>
+               <li>
+                  <img class="icon-list" src="./img/icon-inti.png" alt="">
+                  <p class="title-list">Intuitivo</p>
+                  <p class="p-list">Sigue los pasos y disfruta de tu prompt.</p>
+               </li>
+            </ul>
+         </article>
+      </div>
+   </section>
    <section class="tool" id="herramienta">
       <div class="swiper-container">
          <div class="text-tool">
-            <p>No limites tu potencial.</p>
-            <h2 class="title">Empieza a construir <br> tu prompt</h2>
+            <p class="label label-blue-d">No le temas a la incertidumbre</p>
+            <h2 class="title-min bold">Es hora de construir,<br>tu prompt</h2>
             <p class="sub-title">El poder de la creación está en tus dedos.</p>
          </div>
          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                <div class="swiper-slide">
-                  <h3>Describe la situación:</h3>
-                  <p>¿Qué está sucediendo en la imagen? ¿Hay alguna acción o evento específico que se está desarrollando?</p>
-                  <input type="text" id="pelicula" name="pelicula" placeholder="Isaac Newton está acostado en un arbol.">
-                  <a class="button" href="#">Construir prompt</a>
+                  <h3>¿Qué tipo de imagen te gustaría crear?</h3>
+                  <p>Selecciona una de las opciones.</p>
+                  <div class="row-img-q">
+                     <div class="form-group form-group-s form-group-1">
+                        <input class="form-check-input" type="radio" name="question1" id="question1_a" value="CONTENIDO ALCOHÓLICO 40%">
+                        <label class="form-check-label true" for="question1_a">
+                           <img src="./img/img-realista.png" alt="">
+                           <p>Imagen realista</p>
+                        </label>
+                     </div>
+                     <div class="form-group form-group-s form-group-1">
+                        <input class="form-check-input" type="radio" name="question1" id="question2_a" value="CONTENIDO ALCOHÓLICO 40%">
+                        <label class="form-check-label true" for="question2_a">
+                           <img src="./img/img-digital.png" alt="">
+                           <p>Ilustración digital</p>
+                        </label>
+                     </div>
+                  </div>
                </div>
-               <!-- <div class="swiper-slide">
+               <div class="swiper-slide">
                   <h3>Describe la situación: </h3>
                   <p>¿Qué está sucediendo en la imagen? ¿Hay alguna acción o evento específico que se está desarrollando?</p>
-                  <input type="text" id="actor" name="actor">
+                  <input class="input-text" type="text" id="actor" name="actor">
+                  <input type="text" id="pelicula" name="pelicula" placeholder="Isaac Newton está acostado en un arbol.">
                   <a class="button" href="#">Construir prompt</a>
                </div>
                <div class="swiper-slide">
@@ -76,13 +142,13 @@
                   <p id="respuesta-actor"></p>
                   <p id="respuesta-actor2"></p>
                   <p id="respuesta-actor3"></p>
-               </div> -->
+               </div>
             </div>
             <div class="swiper-pagination"></div>
          </div>
       </div>
    </section>
-   <div class="empty"></div>
+   <div class="bottom"></div>
    <!-- JS de Swiper -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="./js/index.js"></script>
