@@ -91,61 +91,87 @@
    </section>
    <section class="tool" id="herramienta">
       <div class="swiper-container">
-         <div class="text-tool">
-            <p class="label label-blue-d">No le temas a la incertidumbre</p>
-            <h2 class="title-min bold">Es hora de construir,<br>tu prompt</h2>
-            <p class="sub-title">El poder de la creación está en tus dedos.</p>
-         </div>
+
          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-               <div class="swiper-slide">
+               <!-- Slide 1 -->
+               <div class="swiper-slide" data-hash="slide1">
+                  <div class="text-tool">
+                     <p class="label label-blue-d">No le temas a la incertidumbre</p>
+                     <h2 class="title-min bold">Es hora de construir,<br>tu prompt</h2>
+                     <p class="sub-title">El poder de la creación está en tus dedos.</p>
+                  </div>
                   <h3>¿Qué tipo de imagen te gustaría crear?</h3>
                   <p>Selecciona una de las opciones.</p>
                   <div class="row-img-q">
                      <div class="form-group form-group-s form-group-1">
-                        <input class="form-check-input" type="radio" name="question1" id="question1_a" value="CONTENIDO ALCOHÓLICO 40%">
+                        <input class="form-check-input" type="radio" name="question1" id="question1_a" value="Imagen realista">
                         <label class="form-check-label true" for="question1_a">
                            <img src="./img/img-realista.png" alt="">
                            <p>Imagen realista</p>
                         </label>
                      </div>
                      <div class="form-group form-group-s form-group-1">
-                        <input class="form-check-input" type="radio" name="question1" id="question2_a" value="CONTENIDO ALCOHÓLICO 40%">
+                        <input class="form-check-input" type="radio" name="question1" id="question2_a" value="Ilustración digital">
                         <label class="form-check-label true" for="question2_a">
                            <img src="./img/img-digital.png" alt="">
                            <p>Ilustración digital</p>
                         </label>
                      </div>
                   </div>
+                  <a class="button" href="#slide2">Construir prompt</a>
                </div>
-               <div class="swiper-slide">
-                  <h3>Describe la situación: </h3>
+               <!-- Slide 2 -->
+               <div class="swiper-slide" data-hash="slide2">
+                  <div class="text-tool">
+                     <p class="label label-blue-d">No le temas a la incertidumbre</p>
+                     <h2 class="title-min bold">Es hora de construir,<br>tu prompt</h2>
+                     <p class="sub-title">El poder de la creación está en tus dedos.</p>
+                  </div>
+                  <h3>Describe la situación:</h3>
                   <p>¿Qué está sucediendo en la imagen? ¿Hay alguna acción o evento específico que se está desarrollando?</p>
-                  <input class="input-text" type="text" id="actor" name="actor">
-                  <input type="text" id="pelicula" name="pelicula" placeholder="Isaac Newton está acostado en un arbol.">
-                  <a class="button" href="#">Construir prompt</a>
+                  <input class="input-text" type="text" id="question2" name="question2" placeholder="Isaac Newton está acostado en un árbol.">
+                  <a class="button" href="#slide3">Construir prompt</a>
                </div>
-               <div class="swiper-slide">
-                  <h3>Describe los personajes:</h3>
+               <!-- Slide 3 -->
+               <div class="swiper-slide" data-hash="slide3">
+                  <div class="text-tool">
+                     <p class="label label-blue-d">No le temas a la incertidumbre</p>
+                     <h2 class="title-min bold">Es hora de construir,<br>tu prompt</h2>
+                     <p class="sub-title">El poder de la creación está en tus dedos.</p>
+                  </div>
+                  <h3>Describe el contexto:</h3>
                   <p>¿Dónde se desarrolla la imagen? ¿Es un lugar interior o exterior? ¿Hay algún elemento específico del entorno que sea importante?</p>
-                  <input type="text" id="actor2" name="actor2">
+                  <input class="input-text" type="text" id="question3" name="question3" placeholder="En el campus de la universidad de Cambridge">
+                  <a class="button" href="#slide4">Construir prompt</a>
                </div>
-               <div class="swiper-slide">
-                  <h3>Describe el escenario</h3>
-                  <p>¿Hay personas o animales en la imagen? ¿Cómo se ven? ¿Qué están haciendo?</p>
-
-                  <input type="text" id="actor3" name="actor3">
+               <!-- Slide 4 -->
+               <div class="swiper-slide" data-hash="slide4">
+                  <div class="text-tool">
+                     <p class="label label-blue-d">No le temas a la incertidumbre</p>
+                     <h2 class="title-min bold">Es hora de construir,<br>tu prompt</h2>
+                     <p class="sub-title">El poder de la creación está en tus dedos.</p>
+                  </div>
+                  <h3>¿Qué colores predominan en la imagen?</h3>
+                  <p>¿Hay alguna paleta de colores específica que te gustaría usar?</p>
+                  <input class="input-text" type="text" id="question4" name="question4" placeholder="Con tonos cálidos que van desde el naranja hasta el amarillo">
+                  <a class="button" href="#slide5" onclick="showResults()">Construir prompt</a>
                </div>
-               <div class="swiper-slide" id="respuesta-slide">
-                  <h3>Este sería el resultado </h3>
-                  <p id="respuesta-pelicula"></p>
-                  <p id="respuesta-actor"></p>
-                  <p id="respuesta-actor2"></p>
-                  <p id="respuesta-actor3"></p>
+               <!-- Slide 5 -->
+               <div class="swiper-slide" data-hash="slide5" id="respuesta-slide">
+                  <div class="text-tool">
+                     <p class="label label-blue-d">No le temas a la incertidumbre</p>
+                     <h2 class="title-min bold">Perfecto, tu prompt <br> ha sido creado</h2>
+                  </div>
+                  <div id="result-container" class="input-text">
+                     <!-- Aquí se mostrarán las respuestas -->
+                  </div>
+                  <p class="copy-text">El prompt ha sido copiado </p>
                </div>
             </div>
             <div class="swiper-pagination"></div>
          </div>
+
       </div>
    </section>
    <div class="bottom"></div>

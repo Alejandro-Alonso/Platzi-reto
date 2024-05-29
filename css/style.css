@@ -9,7 +9,8 @@ html {
 }
 
 body,
-input {
+input,
+button {
    font-family: "Poppins", sans-serif;
 }
 
@@ -148,7 +149,7 @@ main .button {
 
 .text-tool {
    text-align: center;
-   padding-top: 5rem;
+   padding: 5rem 0 3rem;
 }
 
 .mySwiper {
@@ -174,12 +175,12 @@ main .button {
    margin-top: 2rem;
    display: flex;
    padding-bottom: 7rem;
+   background: #fff;
+   position: relative;
 }
 
 .swiper-slide .button {
-   margin-top: -1rem;
-   position: relative;
-   top: -1rem;
+   margin-top: 2rem;
 }
 
 .text {
@@ -326,20 +327,60 @@ main .button {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 2rem;
+   margin-top: 2rem;
 }
 
-.row-img-q .form-group input:checked+label,
 .form-group:hover {
+   background: rgb(197 249 215 / 20%);
+}
+
+.row-img-q .form-group input:checked+label {
+   border: 1px solid #C5F9D7;
    background: rgb(197 249 215 / 20%);
    display: block;
    padding: 1rem;
    border-radius: 1rem;
-   border: 1px solid #C5F9D7;
    box-shadow: 13px -12px 13px rgb(197 249 215 / 20%);
+   font-weight: 600;
 }
 
 .form-check-label {
    outline: none;
+}
+
+.swiper-slide {
+   color: rgba(0, 0, 0, 0.9);
+}
+
+#respuesta-slide {
+   text-align: left;
+}
+
+#result-container p {
+   margin: 0;
+}
+
+#respuesta-slide .button {
+   position: absolute;
+   bottom: -1rem;
+   left: 50%;
+   transform: translateX(-50%);
+   border: none;
+}
+
+.copy-text {
+   text-align: center;
+   width: fit-content;
+   margin: 4rem auto 0 !important;
+   padding: .6rem 1rem;
+   color: #3f3838;
+   border-radius: 1.4rem;
+   opacity: 0;
+   transition: 300ms opacity ease-in-out;
+}
+
+.copy-text.show {
+   opacity: 1;
 }
 
 
