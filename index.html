@@ -18,14 +18,13 @@
          <img src="./img/logo.svg" alt="">
       </div>
       <nav>
-         <a href="">Home</a>
-         <a href="">Qué es Prompter</a>
-         <a href="">Cómo funciona</a>
+         <a href="#home">Home</a>
+         <a href="#que_es">Qué es Prompter</a>
          <a class="button" href="#herramienta">Construir prompt</a>
       </nav>
    </header>
-   <main>
-      <p>No limites tu potencial.</p>
+   <main id="home">
+      <p class="label">No limites tu potencial.</p>
       <div class="container-title">
          <h2 class="title">Estas a un prompt, de <br> construir algo increible</h2>
          <img class="img" src="./img/adobe-icon.png">
@@ -35,15 +34,16 @@
       </div>
       <p class="sub-title">El poder de la creación está en tus dedos.</p>
       <a class="button" href="#herramienta">Construir prompt</a>
-      <img class="main-banner" src="./img/main-banner.png" alt="">
+      <img class="main-banner img-desk" src="./img/main-banner.png" alt="">
+      <img class="main-banner img-mb" src="./img/img-mb.png" alt="">
    </main>
-   <section class="how-works">
+   <section class="how-works" id="que_es">
       <div class="wrap">
          <article>
             <div class="text">
                <p class="label label-yellow">Ahorra tiempo y esfuerzo</p>
                <h2 class="title-min">Que puedes hacer <br> <strong>con prompter</strong></h2>
-               <p>Prompter es una herramienta creada para con el objetivo de ayudar a los usuarios a escribir prompts de manera fácil e intuitiva ahorrando tiempo y esfuerzo.</p>
+               <p>Prompter es una herramienta creada con el objetivo de ayudar a los usuarios a escribir prompts de manera fácil e intuitiva ahorrando tiempo y esfuerzo.</p>
             </div>
             <div class="row-img">
                <div class="img img-1">
@@ -171,10 +171,20 @@
             </div>
             <div class="swiper-pagination"></div>
          </div>
-
+         <footer>
+            <img src="img/img-foot.png" alt="">
+            <div class="text-foot">
+               <div class="wrap-text">
+                  <div class="row-foot">
+                     <img src="./img/logo.svg" alt="">
+                     <p>Creado por diseñadores para creadores.</p>
+                  </div>
+                  <p>Este proyecto tiene como objetivo ser una guía de ayuda, para aquellas personas que saben algo de diseño para aquellos que no saben nada. Pretende ser una herramienta útil e intuitiva, esperamos que la disfrutes y te sea de ayuda con tus prompts.</p>
+               </div>
+            </div>
+         </footer>
       </div>
    </section>
-   <div class="bottom"></div>
    <!-- JS de Swiper -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="./js/index.js"></script>

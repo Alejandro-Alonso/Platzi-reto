@@ -34,6 +34,10 @@ p {
    margin-top: 1rem;
 }
 
+.img-desk {
+   display: none;
+}
+
 .wrap {
    padding: 0 2%;
    max-width: 1400px;
@@ -42,8 +46,10 @@ p {
 
 header {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
+   flex-wrap: wrap;
+   flex-direction: column;
    margin-top: 2rem;
    background: rgba(255, 255, 255, 0.2);
    backdrop-filter: blur(2px);
@@ -51,6 +57,9 @@ header {
    border-radius: 10px;
    border: 1px solid rgba(255, 255, 255, 0.18);
    z-index: 10;
+   position: sticky;
+   top: 2rem;
+   gap: 1rem 0;
 }
 
 nav {
@@ -58,8 +67,16 @@ nav {
    gap: 1rem;
 }
 
+nav a {
+   color: #3C3C3C;
+}
+
+nav .button {
+   display: none;
+}
+
 main {
-   margin-top: 10rem;
+   margin-top: 3rem;
    text-align: center;
 }
 
@@ -70,7 +87,7 @@ main {
 }
 
 .title {
-   font-size: 3rem;
+   font-size: 2rem;
    line-height: 1.2;
    font-weight: 600;
 }
@@ -87,6 +104,7 @@ nav {
 .container-title .img {
    position: absolute;
    width: 12rem;
+   display: none;
 }
 
 .button {
@@ -102,6 +120,12 @@ nav {
 
 main .button {
    margin-top: 2rem;
+}
+
+main .label {
+   margin: 0 auto 1rem;
+   font-size: 1rem;
+   background: rgb(197 249 215 / 20%);
 }
 
 .container-title .img:nth-child(2) {
@@ -131,7 +155,6 @@ main .button {
    max-width: 1400px;
    position: relative;
    z-index: -1;
-   display: block;
 }
 
 .swiper-pagination {
@@ -155,7 +178,6 @@ main .button {
 .mySwiper {
    max-width: 600px;
    text-align: center;
-   margin-top: 3rem;
 }
 
 .swiper-wrapper {
@@ -224,7 +246,6 @@ main .button {
    background: rgb(253, 250, 245);
    background: linear-gradient(0deg, rgba(253, 250, 245, 1) 0%, rgba(253, 251, 247, 1) 46%, rgba(255, 255, 255, 0) 100%);
    padding-bottom: 4rem;
-   margin-top: -7rem;
 }
 
 .title-min {
@@ -267,7 +288,6 @@ main .button {
 
 .row-2 {
    display: grid;
-   grid-template-columns: 1fr 1.5fr;
    gap: 2rem;
    align-items: center;
    margin-top: 7rem;
@@ -282,7 +302,6 @@ main .button {
 
 .list {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
    list-style: none;
    margin-top: 4rem;
 }
@@ -356,6 +375,10 @@ main .button {
    text-align: left;
 }
 
+#result-container {
+   margin-top: -3rem;
+}
+
 #result-container p {
    margin: 0;
 }
@@ -381,6 +404,90 @@ main .button {
 
 .copy-text.show {
    opacity: 1;
+}
+
+.foot img {
+   width: 100%;
+}
+
+footer {
+   display: grid;
+   align-items: end;
+}
+
+.row-foot {
+   display: grid;
+   grid-template-columns: 8rem auto;
+   align-items: center;
+   gap: 3rem;
+   justify-content: space-between;
+   margin-bottom: 2rem;
+}
+
+.row-foot p {
+   color: #000;
+   font-weight: 600;
+}
+
+.wrap-text {
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+.text-foot {
+   padding-bottom: 4rem;
+   order: -1;
+}
+
+@media(min-width: 768px) {
+   .img-desk {
+      display: block;
+   }
+
+   .img-mb {
+      display: none;
+   }
+
+   .title {
+      font-size: 3rem;
+   }
+
+   .container-title .img {
+      display: block;
+   }
+
+   header {
+      justify-content: space-between;
+      flex-direction: row;
+   }
+
+   nav .button {
+      display: block;
+   }
+
+   .how-works {
+      margin-top: -7rem;
+   }
+
+   .row-2 {
+      grid-template-columns: 1fr 1.5fr;
+   }
+
+   .list {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   footer {
+      grid-template-columns: 25rem auto;
+   }
+
+   .text-foot {
+      order: initial;
+   }
+
+   .main {
+      margin-top: 10rem;
+   }
 }
 
 

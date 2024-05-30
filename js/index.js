@@ -8,7 +8,7 @@ function showResults() {
    // Genera el resultado con el botón de copiar
    const resultContainer = document.getElementById('result-container');
    resultContainer.innerHTML = `
-        <p id="prompt-text">Crea una ${question1} en alta calidad teniendo en cuenta esto: ${question2} y ${question3}. Toda esta composición usará colores ${question4}.</p>
+        <p id="prompt-text">Crea una ${question1} en alta calidad teniendo en cuenta esto: ${question2} ${question3}. Toda esta composición usará colores ${question4}.</p>
         <button class="button" onclick="copyPrompt()">Copiar prompt</button>
     `;
 }
